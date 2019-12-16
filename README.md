@@ -1,2 +1,3 @@
-# Icarus-Stylguide
-The Official Icarus Webservices Styleguide
+<div align="center">
+    <h1>Icarus Webservices</h1>
+</div>
