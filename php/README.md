@@ -17,6 +17,7 @@
 4. [Classes](#classes)
 5. [Documentation & Comments](#documentation--comments)
 6. [Indentation](#Indentation)
+7. [PHP Built-in functions & variables](#php-built-in-functions--variables)
 
 &nbsp;
 
@@ -110,9 +111,9 @@ Most common casing styles:
     ```php
     $my_string = "My string";
     ```
-- `strings` that include HTML should use single quotes ('). Strings within the HTML (for example the HTML element attributes) should use double quotes.
+- `strings` that include HTML should also use single quotes ("). Strings within the HTML (for example the HTML element attributes) should use escaped double quotes.
     ```php
-    $my_html = '<a href="my-website.com">My website</a>';
+    $my_html = "<a href=\"my-website.com\">My website</a>";
     ```
 **[⬆ back to top](#table-of-contents)**
 
@@ -246,3 +247,22 @@ Most common casing styles:
 - HTML within PHP should also use an indentation of 4 spaces, as is highlighted within the HTML styleguide.
 
 ## PHP Built-in functions & variables
+- PHP has a few "keyword functions". These are functions that can be called through a keyword instead of a propper function call (these are functions like `echo`, `include` and `require`).
+    These functions should preferable be called as an actual function.
+    > This helps to make the code seem more clean. Having a consistent syntax is good for your code.
+
+    ```php
+    // Non-prefered way:
+    echo "This is using a keyword function";
+    include "my-application.php";
+    
+    // Prefered way:
+    echo( "This is using a keyword function" );
+    include( "my-application" );
+    ```
+- If you are creating a `<?php ?>` tag only to echo something you should use the `<?= ?>` tag. End the string or variable name with a `;`.
+    > This reduces the amount of code needed drastically.
+
+    ```php
+    <h1><?= $my_title; ?></h1>
+    ```
