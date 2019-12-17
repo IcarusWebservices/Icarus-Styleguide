@@ -16,6 +16,7 @@
 3. [Functions](#functions)
 4. [Classes](#classes)
 5. [Documentation & Comments](#documentation--comments)
+6. [Indentation](#Indentation)
 
 &nbsp;
 
@@ -73,6 +74,8 @@ Most common casing styles:
     ```php
     class MyProjectClass {  }
     ```
+- Abstract classes should use all of these rules
+
 #### Class Proporties
 - Proporties should use the **same casing as variables (snake casing)**. This is because proporties basically act like variables within classes, so using the same notation helps.
     ```php
@@ -103,17 +106,18 @@ Most common casing styles:
     $foo = 0;
     $bar = null;
     ```
-- ```strings``` that do **not** include HTML should be defined with double quotes (")
+- `strings` that do **not** include HTML should be defined with double quotes (").
     ```php
     $my_string = "My string";
     ```
-- ```strings``` that include HTML should use single quotes ('). Strings within the HTML (for example the HTML element attributes) should use double quotes.
+- `strings` that include HTML should use single quotes ('). Strings within the HTML (for example the HTML element attributes) should use double quotes.
     ```php
     $my_html = '<a href="my-website.com">My website</a>';
     ```
 **[⬆ back to top](#table-of-contents)**
 
 ## Functions
+- Everything that applies to functions, also applies to class methods.
 - When calling a function with arguments, you should leave a space after the first bracket, leave a space after each comma and leave a space before the last bracket.
     ```php
     function my_amazing_function( $argument1, $argument2 ) {
@@ -131,7 +135,36 @@ Most common casing styles:
 **[⬆ back to top](#table-of-contents)**
 
 ## Classes
+- All proporties should always be declared within the class. In addition, they should always be assigned a value. Proporties that should not have a value, should be set to `null`. If you really want to not assign a value, make at least sure that a value is assigned within the constructor.
+    > Declaring the proporties makes it easier to read a class
 
+    ```php
+    class MyClass {
+        public $my_proporty = 0;
+    }
+    ```
+- All proporties and methods should declare its visibility. This is mandatory for proporties by default within PHP. 
+    Visibility can be one of these terms:
+    `public` - This method or proporty can be accessed from anywhere within the code.
+    `private` - This method or proporty can only be accessed from within the class itself
+    `protected` - This method or proporty can only be access from within the class itself AND classes that inherit the class.
+    > Visibility helps with defining what can and cannot be accessed. It also works with Intellisense.
+
+    ```php
+    class MyClass {
+        
+        public $my_proporty = 12;
+        
+        protected function my_method() {
+            
+        }
+        
+        private function my_method2() {
+            
+        }
+        
+    }
+    ```
 **[⬆ back to top](#table-of-contents)**
 
 ## Documentation & Comments
@@ -167,6 +200,7 @@ Most common casing styles:
 
 ### Documentation
 - Documentation should follow the PHPDoc guidelines, as mentioned [here](https://docs.phpdoc.org/references/phpdoc/index.html).
+    > PHPDoc is an excellent way to document code. Intellisense in, for example, Visual Studio Code supports PHPDoc.
 - PHPDoc example:
     ```php
     /**
@@ -179,3 +213,7 @@ Most common casing styles:
     }
     ```
 **[⬆ back to top](#table-of-contents)**
+
+## Indentation
+- For PHP use an indentation of 4 spaces
+    > Four spaces makes the code more readable. It allows you and your co-developers to more easily see what parts of the code are within different blocks, that being if-statements, functions, classes and more.
