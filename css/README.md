@@ -6,6 +6,7 @@
 # Table of contents
 - [Variables](#variables)
 - [Indentation](#indentation)
+- [Syntax](#syntax)
 
 # Variables
 - The use of CSS variables is permitted and recommended.
@@ -38,5 +39,30 @@ html {
 /* ----- Good ----- */
 html {
   color: red;
+}
+```
+
+# Syntax
+- It is recommended to start your code by removing the automatic padding and margins.
+```css
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+```
+
+- It is allowed to manipulate comments for use as visual dividers in your code.
+
+```css
+/* ----------------------------------------
+Example divider
+---------------------------------------- */
+main {
+  width: 100%;
+}
+
+/* -------------------- Example divider -------------------- */
+main {
+  width: 100%;
 }
 ```
