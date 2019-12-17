@@ -105,6 +105,12 @@ Most common casing styles:
     }
     ```
 
+### Naming Namespaces
+- Namespaces should use [Pascal casing](#pascal) to make them consistend with classes.
+    ```php
+    namespace "MyNameSpace";
+    ```
+
 **[⬆ back to top](#table-of-contents)**
 &nbsp;
 ## Variables
@@ -268,6 +274,7 @@ Most common casing styles:
     echo( "This is using a keyword function" );
     include( "my-application" );
     ```
+- However, this does not count for namespaces and functions related to them. `namespace` and `use` should still use "keyword functions".
 - If you are creating a `<?php ?>` tag only to echo something you should use the `<?= ?>` tag. End the string or variable name with a `;`.
     > This reduces the amount of code needed drastically.
 
