@@ -14,6 +14,8 @@
         - [Class methods](#class-methods)
 2. [Variables](#variables)
 3. [Functions](#functions)
+4. [Classes](#classes)
+5. [Documentation & Comments](#Documentation-&-Comments)
 
 &nbsp;
 
@@ -112,4 +114,24 @@ Most common casing styles:
 **[⬆ back to top](#table-of-contents)**
 
 ## Functions
-- When calling a function with arguments, you should leave a space after the first bracket
+- When calling a function with arguments, you should leave a space after the first bracket, leave a space after each comma and leave a space before the last bracket.
+    ```php
+    function my_amazing_function( $argument1, $argument2 ) {
+        return 0;
+    }
+    ```
+- Arguments should never be redefined within the function
+    ```php
+    function test_function( $argument ) {
+        // This is not allowed!
+        $argument = 2;
+    }
+    ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Classes
+
+**[⬆ back to top](#table-of-contents)**
+
+## Documentation & Comments
