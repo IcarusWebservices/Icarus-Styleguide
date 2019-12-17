@@ -15,7 +15,7 @@
 2. [Variables](#variables)
 3. [Functions](#functions)
 4. [Classes](#classes)
-5. [Documentation & Comments](#Documentation-&-Comments)
+5. [Documentation & Comments](#documentation--comments)
 
 &nbsp;
 
