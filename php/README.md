@@ -147,7 +147,7 @@ Most common casing styles:
     Visibility can be one of these terms: <br>
     `public` - This method or proporty can be accessed from anywhere within the code.<br>
     `private` - This method or proporty can only be accessed from within the class itself.<br>
-    `protected` - This method or proporty can only be access from within the class itself AND classes that inherit the class.<br>
+    `protected` - This method or proporty can only be access from within the class itself OR classes that inherit the class.<br>
     > Visibility helps with defining what can and cannot be accessed. It also works with Intellisense.
 
     ```php
@@ -155,15 +155,41 @@ Most common casing styles:
         
         public $my_proporty = 12;
         
-        protected function my_method() {
+        protected function myMethod() {
             
         }
         
-        private function my_method2() {
+        private function myMethod2() {
             
         }
         
     }
+    ```
+- The order of keywords should be `[visibility] [static] [final] [method or proporty name]`
+    > Having visibility first helps order a class into a public, private and protected side. Static is the second most important (it determines whether this method or proporty should be accessed through an instance or through the class itself). Final is the least important keyword, and should thus be last.
+
+    ```php
+        class MyClass {
+            
+            public static final function myPublicFinalStaticFunction() {
+                return null;
+            }
+            
+            public static function myPublicStaticFunction() {
+                return null;
+            }
+            
+            public final function myPublicFinalFunction() {
+                return null;
+            }
+            
+            public static final $my_proporty;
+            
+            public final $my_other_proporty;
+            
+            public static $my_other_other_proporty;
+            
+        }
     ```
 **[⬆ back to top](#table-of-contents)**
 
@@ -217,3 +243,4 @@ Most common casing styles:
 ## Indentation
 - For PHP use an indentation of 4 spaces
     > Four spaces makes the code more readable. It allows you and your co-developers to more easily see what parts of the code are within different blocks, that being if-statements, functions, classes and more.
+- HTML within PHP should also use an indentation of 4 spaces, as is highlighted within the HTML styleguide.
