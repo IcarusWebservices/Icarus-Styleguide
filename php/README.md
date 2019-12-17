@@ -135,3 +135,47 @@ Most common casing styles:
 **[⬆ back to top](#table-of-contents)**
 
 ## Documentation & Comments
+### Comments
+- PHP Supports three types of comments: Multiline comments (`/* */ `), Single line comments (double slash, `//`) and Single line comments (hash, `#`).
+- Multiline comments should be used for documentation (see [Documentation](#documentation)) and for comments that are too long for one line. They can also be used to create large headers.
+    ```php
+    # Example one
+    
+    /*
+        This comment is too long for one line,
+        so it is split up in two
+    */
+    
+    # Example two
+    
+    /*===================================================================================================
+            Large Header
+    ===================================================================================================*/
+    ```
+- Double slash single line comments should be the primary way to create comments. These comments should be used to add remarks to the code, making the code easier to read.
+    ```php
+    // These comments should be used to add remarks to the code, making the code easier to read
+    ```
+- Hash single line comments should be used to create headers to your code or add TODO's.
+    ```php
+    # Example 1
+    // Some code here
+    
+    # TODO: add code to 'Example 1'
+    ```
+    Comments can also reference hash headers, like seen in the example above.
+
+### Documentation
+- Documentation should follow the PHPDoc guidelines, as mentioned [here](https://docs.phpdoc.org/references/phpdoc/index.html).
+- PHPDoc example:
+    ```php
+    /**
+     * My Amazing Function
+     * @param array $my_array This is my array
+     * @return void
+     */
+    function my_amazing_function( $my_array ) {
+        // return void
+    }
+    ```
+**[⬆ back to top](#table-of-contents)**
