@@ -7,8 +7,12 @@
 1. [Naming Practices](#naming-practices)
     - [Variables](#naming-variables)
     - [Constants](#naming-constants)
+    - [Functions](#naming-functions)
+    - [Classes](#naming-classes)
+        - [General](#general)
+        - [Class proporties](#class-proporties)
 2. [Variables](#variables)
-
+&nbsp;
 ## Naming Practices
 Most common casing styles:
 - <span id="snake">**Snake casing**</span>: All words should be stringed together with an underscore. All characters should be lower-case. Example: ```this_variable```
@@ -17,6 +21,7 @@ Most common casing styles:
 
 - <span id="camel">**Camel casing**</span>: All words should be stringed together without a devider character. All words **except the first** should start with a capital letter. Example: ```thisVariable```
 - <span id="upper">**UPPER**</span>: All words should be stringed together with an underscore. All characters should be upper-case. Example: ```THIS_VARIABLE```
+&nbsp;
 ### Naming variables
 - Variables should use [snake casing](#snake) notation.
 - If the variables are specific to a project and you want to include the name of the project, you can add the name to the beginning.
@@ -35,7 +40,7 @@ $My_Variable = 12;
 
 $MyVariable = 12;
 ```
-
+&nbsp;
 ### Naming constants
 - Constanst should use [UPPER](#upper) notation. This sets the constants appart from class names.
 ```php
@@ -46,7 +51,7 @@ define("MY_CONSTANT", 0);
 define("my_constant", 0);
 define("My_Constant", 0);
 ```
-
+&nbsp;
 ### Naming functions
 - Functions should use [snake casing](#snake) notation.
 ```php
@@ -55,11 +60,36 @@ function foo_bar() {
     return null;
 }
 
-//=== Bad ===//
-# No camel-casing
+// Bad
 function fooBar() { return null; }
-# No 
+
 function FooBar() { return null; }
+```
+
+### Naming classes
+&nbsp;
+#### General
+- The class name should use [Pascal casing](#pascal) notation.
+```php
+// Good
+class MyClass {  }
+
+// Bad
+class myClass {  }
+
+class my_class {  }
+```
+- If you wish to add the name of your project to the class name, you can add the name to the beginning of the class name.
+```php
+class MyProjectClass {  }
+```
+&nbsp;
+#### Class Proporties
+- Proporties should use the **same casing as variables (snake casing)**. This is because variables basically act like variables within classes, so using the same notation helps.
+```php
+class MyClass {
+    
+}
 ```
 
 ## Variables
