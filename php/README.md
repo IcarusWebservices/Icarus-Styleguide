@@ -11,7 +11,9 @@
     - [Classes](#naming-classes)
         - [General](#general)
         - [Class proporties](#class-proporties)
+        - [Class methods](#class-methods)
 2. [Variables](#variables)
+3. [Functions](#functions)
 
 &nbsp;
 
@@ -85,7 +87,7 @@ Most common casing styles:
     class MyClass {
         
         public function myMethod( $my_argument ) {
-            returns $my_argument;
+            return $my_argument;
         }
         
     }
@@ -96,6 +98,18 @@ Most common casing styles:
 ## Variables
 - Variables should **always** be defined with a value. If a variable should not have a defined starting value, set the variable to ```null```: 
     ```php
-        $foo = 0;
-        $bar = null;
+    $foo = 0;
+    $bar = null;
     ```
+- ```strings``` that do **not** include HTML should be defined with double quotes (")
+    ```php
+    $my_string = "My string";
+    ```
+- ```strings``` that include HTML should use single quotes ('). Strings within the HTML (for example the HTML element attributes) should use double quotes.
+    ```php
+    $my_html = '<a href="my-website.com">My website</a>';
+    ```
+**[⬆ back to top](#table-of-contents)**
+
+## Functions
+- When calling a function with arguments, you should leave a space after the first bracket
