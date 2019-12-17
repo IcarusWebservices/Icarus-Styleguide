@@ -64,6 +64,12 @@ Most common casing styles:
         return $foo_has_bar;
     }
     ```
+- If the functions are specific to a project and you want to include the name of the project, you can add the name to the beginning.
+    ```php
+    function my_project_foo_bar( $foo_has_bar ) {
+        return $foo_has_bar;
+    }
+    ```
 
 ### Naming classes
 #### General
