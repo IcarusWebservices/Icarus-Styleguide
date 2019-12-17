@@ -4,7 +4,7 @@
 </div>
 
 ## Table of Contents
-1. Variables
+1. [Variables](#Variables)
 2. 
 
 ## Variables
