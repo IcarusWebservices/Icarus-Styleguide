@@ -4,7 +4,7 @@
 </div>
 
 ## Table of Contents
-1. [Naming Practices](#Naming_Practices)
+1. [Naming Practices](#Naming%20Practices)
 2. [Variables](#Variables)
 
 ## Naming Practices
