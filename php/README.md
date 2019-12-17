@@ -247,7 +247,7 @@ Most common casing styles:
 - HTML within PHP should also use an indentation of 4 spaces, as is highlighted within the HTML styleguide.
 
 ## PHP Built-in functions & variables
-- PHP has a few "keyword functions". These are functions that can be called through a keyword instead of a propper function call (these are functions like `echo`, `include` and `require`).
+- PHP has a few "keyword functions". These are functions that can be called through a keyword instead of a propper function call (Functions like `echo`, `include` and `require`).
     These functions should preferable be called as an actual function.
     > This helps to make the code seem more clean. Having a consistent syntax is good for your code.
 
