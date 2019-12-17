@@ -21,7 +21,9 @@ Most common casing styles:
 
 - <span id="camel">**Camel casing**</span>: All words should be stringed together without a devider character. All words **except the first** should start with a capital letter. Example: ```thisVariable```
 - <span id="upper">**UPPER**</span>: All words should be stringed together with an underscore. All characters should be upper-case. Example: ```THIS_VARIABLE```
+
 &nbsp;
+
 ### Naming variables
 - Variables should use [snake casing](#snake) notation.
 - If the variables are specific to a project and you want to include the name of the project, you can add the name to the beginning.
@@ -65,9 +67,8 @@ function fooBar() { return null; }
 
 function FooBar() { return null; }
 ```
-
-### Naming classes
 &nbsp;
+### Naming classes
 #### General
 - The class name should use [Pascal casing](#pascal) notation.
 ```php
