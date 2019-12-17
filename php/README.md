@@ -11,17 +11,20 @@
 
 ## Naming Practices
 Most common casing styles:
-- **Snake casing**: All words should be stringed together with an underscore. All characters should be lower-case. Example: ```this_variable```
+- <span id="snake">**Snake casing**</span>: All words should be stringed together with an underscore. All characters should be lower-case. Example: ```this_variable```
 
-- **Pascal casing**: All words should be stringed together without a devider character. All words should start with a capital letter. Example: ```ThisVariable```
+- <span id="pascal">**Pascal casing**</span>: All words should be stringed together without a devider character. All words should start with a capital letter. Example: ```ThisVariable```
 
-- **Camel casing**: All words should be stringed together without a devider character. All words **except the first** should start with a capital letter. Example: ```thisVariable```
-- **UPPER**: All words should be stringed together with an underscore. All characters should be upper-case. Example: ```THIS_VARIABLE```
+- <span id="camel">**Camel casing**</span>: All words should be stringed together without a devider character. All words **except the first** should start with a capital letter. Example: ```thisVariable```
+- <span id="upper">**UPPER**</span>: All words should be stringed together with an underscore. All characters should be upper-case. Example: ```THIS_VARIABLE```
 ### Naming variables
-- Variables should use snake-case notation.
+- Variables should use [snake casing](#snake) notation.
+- If the variables are specific to a project and you want to include the name of the project, you can add the name to the beginning.
 ```php
 // Good
 $my_variable = 12;
+# With project name
+$project_my_variable = 12;
 
 // Bad
 $myVariable = 12;
@@ -34,7 +37,7 @@ $MyVariable = 12;
 ```
 
 ### Naming constants
-- Constanst should use full upper-case notation. This sets the constants appart from class names.
+- Constanst should use [UPPER](#upper) notation. This sets the constants appart from class names.
 ```php
 // Good
 define("MY_CONSTANT", 0);
@@ -45,7 +48,7 @@ define("My_Constant", 0);
 ```
 
 ### Naming functions
-- Functions should use snake-case notation.
+- Functions should use [snake casing](#snake) notation.
 ```php
 // Good
 function foo_bar() {
