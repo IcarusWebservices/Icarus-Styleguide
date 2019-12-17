@@ -244,3 +244,5 @@ Most common casing styles:
 - For PHP use an indentation of 4 spaces
     > Four spaces makes the code more readable. It allows you and your co-developers to more easily see what parts of the code are within different blocks, that being if-statements, functions, classes and more.
 - HTML within PHP should also use an indentation of 4 spaces, as is highlighted within the HTML styleguide.
+
+## PHP Built-in functions & variables
