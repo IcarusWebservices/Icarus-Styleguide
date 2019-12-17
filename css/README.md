@@ -17,7 +17,9 @@
   --color-primary: red;
   color: var(--color-primary);
 }
+```
 
+```css
 /* ----- Good ----- */
 html {
   --color-primary: red;
