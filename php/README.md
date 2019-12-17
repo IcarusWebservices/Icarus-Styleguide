@@ -144,10 +144,10 @@ Most common casing styles:
     }
     ```
 - All proporties and methods should declare its visibility. This is mandatory for proporties by default within PHP. 
-    Visibility can be one of these terms:
-    `public` - This method or proporty can be accessed from anywhere within the code.
-    `private` - This method or proporty can only be accessed from within the class itself
-    `protected` - This method or proporty can only be access from within the class itself AND classes that inherit the class.
+    Visibility can be one of these terms: <br>
+    `public` - This method or proporty can be accessed from anywhere within the code.<br>
+    `private` - This method or proporty can only be accessed from within the class itself.<br>
+    `protected` - This method or proporty can only be access from within the class itself AND classes that inherit the class.<br>
     > Visibility helps with defining what can and cannot be accessed. It also works with Intellisense.
 
     ```php
