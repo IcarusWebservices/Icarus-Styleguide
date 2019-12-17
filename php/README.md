@@ -4,8 +4,10 @@
 </div>
 
 ## Table of Contents
-1. [Variables](#Variables)
-2. 
+1. [Naming Practices](#Naming_Practices)
+2. [Variables](#Variables)
+
+## Naming Practices
 
 ## Variables
 - Variables should **always** be defined with a value. If a variable should not have a defined starting value, set the variable to ```null```: 
