@@ -246,6 +246,8 @@ Most common casing styles:
     > Four spaces makes the code more readable. It allows you and your co-developers to more easily see what parts of the code are within different blocks, that being if-statements, functions, classes and more.
 - HTML within PHP should also use an indentation of 4 spaces, as is highlighted within the HTML styleguide.
 
+**[⬆ back to top](#table-of-contents)**
+
 ## PHP Built-in functions & variables
 - PHP has a few "keyword functions". These are functions that can be called through a keyword instead of a propper function call (Functions like `echo`, `include` and `require`).
     These functions should preferable be called as an actual function.
@@ -266,3 +268,5 @@ Most common casing styles:
     ```php
     <h1><?= $my_title; ?></h1>
     ```
+    
+**[⬆ back to top](#table-of-contents)**
