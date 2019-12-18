@@ -47,3 +47,13 @@
     ```
     
 - Custom attributes are permitted on custom elements (also known as Web Components).
+    ```html
+    <my-component my-custom-attribute="My amazing attribute"></my-component>
+    ```
+- Using the `style` argument on elements is discouraged.
+    > Create a seperate .css file and link it through the header. To style an individuel element, use an ID.
+
+    ```html
+    <!-- Avoid -->
+    <a href="#" style="color:red;">This link</a>
+    ```
