@@ -57,3 +57,44 @@
     <!-- Avoid -->
     <a href="#" style="color:red;">This link</a>
     ```
+- The `html` element should always include the `lang` attribute. You should set this to the language code of the language of the page.
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <!-- Your website -->
+    </html>
+    ```
+    
+## Layout
+- You should always start your document with the `<!DOCTYPE html>` tag.
+- You should always create an organized document structure.
+    > We mean that you should put all of your HTML within `<html>` tags, all of your page body within `<body>` tags and all the headers within `<head>` tags.
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <title>Welcome to the website</title>
+        </head>
+        <body>
+            <h1>My header</h1>
+        </body>
+    </html>
+    ```
+- You should always use the `meta viewport` tag to make your webpage responsible.
+    Preferable use this tag: `<meta name="viewport" content="width=device-width, initial-scale=1">`.
+    > This makes sure that the webpage responds to changes in device width.
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>Welcome to the website</title>
+        </head>
+        <body>
+            <h1>My header</h1>
+        </body>
+    </html>
+    ```
+    
