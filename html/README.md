@@ -6,6 +6,7 @@
 ## Table Of Contents
 1. [Indentation](#indentation)
 2. [Elements](#elements)
+3. [Layout](#layout)
 
 ## Indentation
 - HTML should use an indentation of 4 spaces, especially when integrating HTML into PHP. If you are however creating an HTML file without PHP 2 spaces is permitted but not recommended.
