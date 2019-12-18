@@ -18,7 +18,8 @@
 4. [Classes](#classes)
 5. [Documentation & Comments](#documentation--comments)
 6. [Indentation](#Indentation)
-7. [PHP Built-in functions & variables](#php-built-in-functions--variables)
+7. [PHP Language](#php-language)
+8. [Loops](#loops)
 
 &nbsp;
 
@@ -124,7 +125,7 @@ Most common casing styles:
     ```php
     $my_string = "My string";
     ```
-- `strings` that include HTML should also use single quotes ("). Strings within the HTML (for example the HTML element attributes) should use escaped double quotes.
+- `strings` that include HTML should also use double quotes ("). Strings within the HTML (for example the HTML element attributes) should use escaped double quotes.
     ```php
     $my_html = "<a href=\"my-website.com\">My website</a>";
     ```
@@ -261,21 +262,7 @@ Most common casing styles:
 
 **[⬆ back to top](#table-of-contents)**
 
-## PHP Built-in functions & variables
-- PHP has a few "keyword functions". These are functions that can be called through a keyword instead of a propper function call (Functions like `echo`, `include` and `require`).
-    These functions should preferable be called as an actual function.
-    > This helps to make the code seem more clean. Having a consistent syntax is good for your code.
-
-    ```php
-    // Non-prefered way:
-    echo "This is using a keyword function";
-    include "my-application.php";
-    
-    // Prefered way:
-    echo( "This is using a keyword function" );
-    include( "my-application" );
-    ```
-- However, this does not count for namespaces and functions related to them. `namespace` and `use` should still use "keyword functions".
+## PHP Language
 - If you are creating a `<?php ?>` tag only to echo something you should use the `<?= ?>` tag. End the string or variable name with a `;`.
     > This reduces the amount of code needed drastically.
 
@@ -284,3 +271,36 @@ Most common casing styles:
     ```
     
 **[⬆ back to top](#table-of-contents)**
+
+## Loops
+- When looping over an `array` you should always use the `foreach` loop instead of the `for` loop, **that is unless** you need to have the current iteration of the loop, in which case you should use the `for` loop.
+    > foreach is a function that is more easily readable and easier to create.
+
+    ```php
+    // Correct
+    foreach( $array as $item ) {
+        echo $item;
+    }
+    
+    // Correct
+    foreach( $array as $key => $value ) {
+        echo $key;
+        echo $value;
+    }
+    
+    // Correct, you use the current iteration to echo, so a normal for loop is prefered.
+    for($i = 0; $i < count($array); $i++) {
+        echo $i;
+    }
+    
+    // Incorrect, you do not use the iteration for something that the foreach loop cannot do, 
+    // making the for loop and foreach loop the same.
+    for($i = 0; $i < count($array); $i++) {
+        echo $array[$i];
+    }
+    ```
+
+
+
+
+
