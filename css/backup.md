@@ -7,6 +7,7 @@
 1. [Variables](#variables)
 2. [Indentation](#indentation)
 3. [Syntax](#syntax)
+4. [Comments](#comments)
 
 # Variables
 - The use of CSS variables is permitted and recommended.
@@ -58,18 +59,19 @@
     }
     ```
 
+# Comments
 - It is allowed to manipulate comments for use as visual dividers in your code.
 
-```css
-/* ----------------------------------------
-Example divider
----------------------------------------- */
-main {
-  width: 100%;
-}
-
-/* -------------------- Example divider -------------------- */
-main {
-  width: 100%;
-}
-```
+    ```css
+    /* ----------------------------------------
+    Example divider
+    ---------------------------------------- */
+    main {
+      width: 100%;
+    }
+    
+    /* -------------------- Example divider -------------------- */
+    main {
+      width: 100%;
+    }
+    ```
