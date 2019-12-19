@@ -11,7 +11,7 @@
 ## Syntax
 
 <a id="1.1"></a>
-- [[1.1](#1.1)] You should not use the `;` sign to end a line.
+- [[1.1](#user-content-1.1)] You should not use the `;` sign to end a line.
     ```js
     // Correct
     const foo = 1
@@ -20,7 +20,7 @@
     const bar = 1;
     ```
 <a id="1.2"></a>
-- [[1.2](#1.2)] You should use an indentation of 4 spaces.
+- [[1.2](#user-content-1.2)] You should use an indentation of 4 spaces.
     > This makes it consistent with HTML
 
     ```js
