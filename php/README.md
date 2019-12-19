@@ -112,6 +112,12 @@ Most common casing styles:
     ```php
     namespace "MyNameSpace";
     ```
+    
+### Naming interfaces
+- Interfaces should use [Pascal casing](#pascal) to make them consistend with classes.
+    ```php
+    interface MyInterface { }
+    ```
 
 **[⬆ back to top](#table-of-contents)**
 &nbsp;
