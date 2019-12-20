@@ -320,8 +320,7 @@ Most common casing styles:
     ```
 - We recommend naming files that solely contain a class to be named like this: `class-[class name].php`
 - If you want to incorperate the project name into files we recommend using an abbreviation, preferably 2 characters.
-    > Example for JetStreaM: `js`.
-    > `js-[filename].php`
+    > Example for JetStream (js): `js-[filename].php`.
 
 
 
