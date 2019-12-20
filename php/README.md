@@ -13,6 +13,7 @@
         - [Class proporties](#class-proporties)
         - [Class methods](#class-methods)
     - [Namespaces](#naming-namespaces)
+    - [Interfaces](#naming-interfaces)
 2. [Variables](#variables)
 3. [Functions](#functions)
 4. [Classes](#classes)
