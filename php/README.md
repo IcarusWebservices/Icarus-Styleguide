@@ -20,6 +20,7 @@
 6. [Indentation](#Indentation)
 7. [PHP Language](#php-language)
 8. [Loops](#loops)
+9. [Projects (and file naming)](#projects)
 
 &nbsp;
 
@@ -306,7 +307,21 @@ Most common casing styles:
     }
     ```
 
+**[⬆ back to top](#table-of-contents)**
 
+## Projects
+- Projects should have an organized structure. Although the structure should be completely up to you, we can give some tips on how to best organize a project.
+### Recommendations
+- We typically use this file-structure:
+    ```
+    index.php - The index of your application.
+    [Directory] includes - the directory to store classes & functions that you want to include
+    [Directory] content - the directory to store content, like images and videos.
+    ```
+- We recommend naming files that solely contain a class to be named like this: `class-[class name].php`
+- If you want to incorperate the project name into files we recommend using an abbreviation, preferably 2 characters.
+    > Example for JetStreaM: `js`.
+    > `js-[filename].php`
 
 
 
